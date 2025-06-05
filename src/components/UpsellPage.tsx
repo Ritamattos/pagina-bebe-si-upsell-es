@@ -184,19 +184,16 @@ const UpsellPage = () => {
             👇 GARANTIR MINHA OFERTA AGORA 👇
           </h3>
           <div className="bg-white rounded-lg p-4">
-            <p className="text-green-600 font-bold mb-2">Cole o código da Hotmart aqui:</p>
-            <div className="bg-gray-100 border-2 border-dashed border-green-500 rounded-lg p-8">
-              {/* HOTMART - Sales Funnel Widget */}
-              {/*--- sales funnel container ---*/}
-              <div id="hotmart-sales-funnel"></div>
+            {/* HOTMART - Sales Funnel Widget */}
+            {/*--- sales funnel container ---*/}
+            <div id="hotmart-sales-funnel"></div>
 
-              {/*--- script load and setup ---*/}
-              <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
-              <script dangerouslySetInnerHTML={{
-                __html: `checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')`
-              }}></script>
-              {/* HOTMART - Sales Funnel Widget */}
-            </div>
+            {/*--- script load and setup ---*/}
+            <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+            <script dangerouslySetInnerHTML={{
+              __html: `checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')`
+            }}></script>
+            {/* HOTMART - Sales Funnel Widget */}
           </div>
         </div>
 
