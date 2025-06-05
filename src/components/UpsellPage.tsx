@@ -86,7 +86,7 @@ const UpsellPage = () => {
             <Card className="border-green-500 border-2 shadow-lg">
               <CardContent className="p-6 text-center">
                 <img 
-                  src="/lovable-uploads/005e6251-5717-4556-86fd-d68bb71221d4.png" 
+                  src="/lovable-uploads/26d4a9ec-78a8-4d58-bc3b-5bb69401ce60.png" 
                   alt="Baralho Físico Beba Se" 
                   className="mx-auto w-48 h-48 object-contain mb-4"
                 />
@@ -106,7 +106,7 @@ const UpsellPage = () => {
             <Card className="border-green-500 border-2 shadow-lg">
               <CardContent className="p-6 text-center">
                 <img 
-                  src="/lovable-uploads/26d4a9ec-78a8-4d58-bc3b-5bb69401ce60.png" 
+                  src="/lovable-uploads/005e6251-5717-4556-86fd-d68bb71221d4.png" 
                   alt="Cartas Personalizáveis" 
                   className="mx-auto w-48 h-48 object-contain mb-4"
                 />
