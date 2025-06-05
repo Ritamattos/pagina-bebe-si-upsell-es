@@ -1,9 +1,29 @@
 import { Clock, Star, Gift, Shield, Zap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useEffect } from "react";
 import CountdownTimer from "./CountdownTimer";
 
 const UpsellPage = () => {
+  useEffect(() => {
+    // Carregar script da Hotmart
+    const script = document.createElement('script');
+    script.src = 'https://checkout.hotmart.com/lib/hotmart-checkout-elements.js';
+    script.async = true;
+    script.onload = () => {
+      // Inicializar o widget após o script carregar
+      if ((window as any).checkoutElements) {
+        (window as any).checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+      }
+    };
+    document.head.appendChild(script);
+
+    return () => {
+      // Limpar script quando componente for desmontado
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header de Urgência */}
@@ -185,15 +205,8 @@ const UpsellPage = () => {
           </h3>
           <div className="bg-white rounded-lg p-4">
             {/* HOTMART - Sales Funnel Widget */}
-            {/*--- sales funnel container ---*/}
             <div id="hotmart-sales-funnel"></div>
-
-            {/*--- script load and setup ---*/}
-            <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
-            <script dangerouslySetInnerHTML={{
-              __html: `checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')`
-            }}></script>
-            {/* HOTMART - Sales Funnel Widget */}
+            {/* Widget será carregado via useEffect */}
           </div>
         </div>
 
