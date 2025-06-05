@@ -44,48 +44,45 @@ iframe[src*="hotmart"] {
   box-sizing: border-box !important;
 }
 
-/* Mobile - centralização perfeita */
+/* Mobile - usar flexbox para centralização */
 @media (max-width: 768px) {
-  iframe[src*="hotmart"] {
-    width: 85% !important;
-    max-width: 260px !important;
-    height: 180px !important;
-    margin: 15px auto !important;
-    display: block !important;
-    transform: scale(0.85) !important;
-    transform-origin: center center !important;
-    border-radius: 8px !important;
-    overflow: hidden !important;
-    /* Ajustes de centralização */
-    position: relative !important;
-    left: 50% !important;
-    margin-left: -130px !important; /* metade da max-width */
-  }
-  
-  /* Container pai */
+  /* Container que envolve o iframe */
   body, html {
     overflow-x: hidden !important;
   }
   
-  /* Forçar qualquer elemento Hotmart */
+  /* Forçar container pai a usar flexbox */
   div[id*="hotmart"],
   div[class*="hotmart"],
-  .hotmart-widget {
-    max-width: 260px !important;
-    margin: 0 auto !important;
-    overflow: hidden !important;
-    text-align: center !important;
+  .hotmart-widget,
+  div:has(iframe[src*="hotmart"]) {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
+  }
+  
+  iframe[src*="hotmart"] {
+    width: 280px !important;
+    height: 180px !important;
+    transform: scale(0.9) !important;
+    transform-origin: center !important;
+    border-radius: 8px !important;
+    margin: 0 !important;
+    position: static !important;
+    left: auto !important;
+    margin-left: 0 !important;
   }
 }
 
-/* Extra small screens */
+/* Para telas muito pequenas */
 @media (max-width: 480px) {
   iframe[src*="hotmart"] {
-    width: 80% !important;
-    max-width: 240px !important;
+    width: 260px !important;
     height: 160px !important;
-    transform: scale(0.8) !important;
-    margin-left: -120px !important; /* metade da max-width */
+    transform: scale(0.85) !important;
   }
 }
 </style>
