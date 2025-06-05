@@ -44,7 +44,7 @@ iframe[src*="hotmart"] {
   box-sizing: border-box !important;
 }
 
-/* Mobile - forçar botão a ficar dentro */
+/* Mobile - centralização perfeita */
 @media (max-width: 768px) {
   iframe[src*="hotmart"] {
     width: 85% !important;
@@ -56,6 +56,10 @@ iframe[src*="hotmart"] {
     transform-origin: center center !important;
     border-radius: 8px !important;
     overflow: hidden !important;
+    /* Ajustes de centralização */
+    position: relative !important;
+    left: 50% !important;
+    margin-left: -130px !important; /* metade da max-width */
   }
   
   /* Container pai */
@@ -70,16 +74,18 @@ iframe[src*="hotmart"] {
     max-width: 260px !important;
     margin: 0 auto !important;
     overflow: hidden !important;
+    text-align: center !important;
   }
 }
 
-/* Extra small screens (celulares pequenos) */
+/* Extra small screens */
 @media (max-width: 480px) {
   iframe[src*="hotmart"] {
     width: 80% !important;
     max-width: 240px !important;
     height: 160px !important;
     transform: scale(0.8) !important;
+    margin-left: -120px !important; /* metade da max-width */
   }
 }
 </style>
