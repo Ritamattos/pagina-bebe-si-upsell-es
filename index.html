@@ -51,32 +51,32 @@ fbq('track', 'PageView');
   }
   
   iframe[src*="hotmart"] {
-    width: 280px !important;
-    height: 180px !important;
+    width: 320px !important;
+    height: 200px !important;
     max-width: none !important;
     min-width: auto !important;
     display: block !important;
     margin: 15px auto !important;
-    transform: scale(0.7) translateX(-20px) !important;
+    transform: scale(0.8) translateX(-20px) !important;
     transform-origin: left center !important;
     border-radius: 8px !important;
     position: relative !important;
     left: 50% !important;
-    margin-left: -98px !important; /* 280*0.7/2 = 98 */
+    margin-left: -128px !important; /* 320*0.8/2 = 128 */
   }
 }
 
 @media (max-width: 400px) {
   iframe[src*="hotmart"] {
-    transform: scale(0.6) translateX(-30px) !important;
-    margin-left: -84px !important; /* 280*0.6/2 = 84 */
+    transform: scale(0.7) translateX(-30px) !important;
+    margin-left: -112px !important; /* 320*0.7/2 = 112 */
   }
 }
 
 @media (max-width: 350px) {
   iframe[src*="hotmart"] {
-    transform: scale(0.5) translateX(-40px) !important;
-    margin-left: -70px !important; /* 280*0.5/2 = 70 */
+    transform: scale(0.6) translateX(-40px) !important;
+    margin-left: -96px !important; /* 320*0.6/2 = 96 */
   }
 }
 </style>
