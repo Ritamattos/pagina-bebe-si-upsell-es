@@ -37,34 +37,50 @@ fbq('init', '1013287836996209');
 fbq('track', 'PageView');
 </script>
 <!-- End Meta Pixel Code -->
-    <style>
-/* Corrigir botão no mobile */
-@media (max-width: 768px) {
-  .hotmart-button,
-  iframe[src*="hotmart"],
-  .hotmart-widget {
-    width: 90% !important;
-    max-width: 280px !important;
-    height: auto !important;
-    margin: 10px auto !important;
-    display: block !important;
-    transform: none !important;
-    position: relative !important;
-  }
-  
-  /* Forçar container a conter o iframe */
-  .hotmart-widget-container,
-  div[class*="hotmart"] {
-    overflow: hidden !important;
-    padding: 10px !important;
-    box-sizing: border-box !important;
-  }
-}
-
-/* Para todas as telas */
+   <style>
+/* Desktop - manter como está */
 iframe[src*="hotmart"] {
   max-width: 100% !important;
   box-sizing: border-box !important;
+}
+
+/* Mobile - forçar botão a ficar dentro */
+@media (max-width: 768px) {
+  iframe[src*="hotmart"] {
+    width: 85% !important;
+    max-width: 260px !important;
+    height: 180px !important;
+    margin: 15px auto !important;
+    display: block !important;
+    transform: scale(0.85) !important;
+    transform-origin: center center !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+  }
+  
+  /* Container pai */
+  body, html {
+    overflow-x: hidden !important;
+  }
+  
+  /* Forçar qualquer elemento Hotmart */
+  div[id*="hotmart"],
+  div[class*="hotmart"],
+  .hotmart-widget {
+    max-width: 260px !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+  }
+}
+
+/* Extra small screens (celulares pequenos) */
+@media (max-width: 480px) {
+  iframe[src*="hotmart"] {
+    width: 80% !important;
+    max-width: 240px !important;
+    height: 160px !important;
+    transform: scale(0.8) !important;
+  }
 }
 </style>
   </head>
