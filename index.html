@@ -44,7 +44,7 @@ iframe[src*="hotmart"] {
   box-sizing: border-box !important;
 }
 
-/* Mobile - só afetar o iframe do Hotmart */
+/* Mobile normal */
 @media (max-width: 768px) {
   iframe[src*="hotmart"] {
     width: 90% !important;
@@ -58,13 +58,33 @@ iframe[src*="hotmart"] {
   }
 }
 
-/* Para telas muito pequenas */
+/* Telas pequenas (celulares menores) */
 @media (max-width: 480px) {
   iframe[src*="hotmart"] {
     width: 85% !important;
-    max-width: 260px !important;
+    max-width: 250px !important;
     height: 160px !important;
-    transform: translateX(-3px) scale(0.85) !important;
+    transform: translateX(-3px) scale(0.8) !important;
+  }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 400px) {
+  iframe[src*="hotmart"] {
+    width: 80% !important;
+    max-width: 220px !important;
+    height: 140px !important;
+    transform: translateX(-2px) scale(0.75) !important;
+  }
+}
+
+/* Telas extra pequenas */
+@media (max-width: 350px) {
+  iframe[src*="hotmart"] {
+    width: 75% !important;
+    max-width: 200px !important;
+    height: 130px !important;
+    transform: translateX(-1px) scale(0.7) !important;
   }
 }
 </style>
