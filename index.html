@@ -44,47 +44,60 @@ iframe[src*="hotmart"] {
   box-sizing: border-box !important;
 }
 
-/* Mobile normal */
+/* Mobile - controle total */
 @media (max-width: 768px) {
+  /* Forçar overflow hidden no container pai */
+  body {
+    overflow-x: hidden !important;
+  }
+  
+  /* Container branco */
+  .container,
+  div[style*="background"],
+  div[style*="white"] {
+    overflow: hidden !important;
+    padding: 20px 10px !important;
+  }
+  
   iframe[src*="hotmart"] {
-    width: 90% !important;
-    max-width: 280px !important;
+    width: 95% !important;
+    max-width: calc(100vw - 60px) !important;
     height: 180px !important;
     display: block !important;
     margin: 15px auto !important;
-    transform: translateX(-5px) scale(0.9) !important;
+    transform: scale(0.85) !important;
     transform-origin: center !important;
     border-radius: 8px !important;
   }
 }
 
-/* Telas pequenas (celulares menores) */
+/* Telas pequenas */
 @media (max-width: 480px) {
   iframe[src*="hotmart"] {
-    width: 85% !important;
-    max-width: 250px !important;
+    width: 90% !important;
+    max-width: calc(100vw - 80px) !important;
     height: 160px !important;
-    transform: translateX(-3px) scale(0.8) !important;
+    transform: scale(0.8) !important;
   }
 }
 
 /* Telas muito pequenas */
 @media (max-width: 400px) {
   iframe[src*="hotmart"] {
-    width: 80% !important;
-    max-width: 220px !important;
+    width: 85% !important;
+    max-width: calc(100vw - 100px) !important;
     height: 140px !important;
-    transform: translateX(-2px) scale(0.75) !important;
+    transform: scale(0.75) !important;
   }
 }
 
 /* Telas extra pequenas */
 @media (max-width: 350px) {
   iframe[src*="hotmart"] {
-    width: 75% !important;
-    max-width: 200px !important;
-    height: 130px !important;
-    transform: translateX(-1px) scale(0.7) !important;
+    width: 80% !important;
+    max-width: calc(100vw - 120px) !important;
+    height: 120px !important;
+    transform: scale(0.7) !important;
   }
 }
 </style>
