@@ -44,45 +44,27 @@ iframe[src*="hotmart"] {
   box-sizing: border-box !important;
 }
 
-/* Mobile - usar flexbox para centralização */
+/* Mobile - só afetar o iframe do Hotmart */
 @media (max-width: 768px) {
-  /* Container que envolve o iframe */
-  body, html {
-    overflow-x: hidden !important;
-  }
-  
-  /* Forçar container pai a usar flexbox */
-  div[id*="hotmart"],
-  div[class*="hotmart"],
-  .hotmart-widget,
-  div:has(iframe[src*="hotmart"]) {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 100% !important;
-    padding: 10px !important;
-    box-sizing: border-box !important;
-  }
-  
   iframe[src*="hotmart"] {
-    width: 280px !important;
+    width: 90% !important;
+    max-width: 280px !important;
     height: 180px !important;
-    transform: scale(0.9) !important;
+    display: block !important;
+    margin: 15px auto !important;
+    transform: translateX(-5px) scale(0.9) !important;
     transform-origin: center !important;
     border-radius: 8px !important;
-    margin: 0 !important;
-    position: static !important;
-    left: auto !important;
-    margin-left: 0 !important;
   }
 }
 
 /* Para telas muito pequenas */
 @media (max-width: 480px) {
   iframe[src*="hotmart"] {
-    width: 260px !important;
+    width: 85% !important;
+    max-width: 260px !important;
     height: 160px !important;
-    transform: scale(0.85) !important;
+    transform: translateX(-3px) scale(0.85) !important;
   }
 }
 </style>
