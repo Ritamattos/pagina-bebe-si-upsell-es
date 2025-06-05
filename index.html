@@ -37,7 +37,7 @@ fbq('init', '1013287836996209');
 fbq('track', 'PageView');
 </script>
 <!-- End Meta Pixel Code -->
-   <style>
+  <style>
 /* Forçar tudo no mobile */
 @media (max-width: 768px) {
   /* Esconder overflow horizontal */
@@ -57,26 +57,26 @@ fbq('track', 'PageView');
     min-width: auto !important;
     display: block !important;
     margin: 15px auto !important;
-    transform: scale(0.8) translateX(-20px) !important;
-    transform-origin: left center !important;
+    transform: scale(0.8) !important;
+    transform-origin: center center !important;
     border-radius: 8px !important;
     position: relative !important;
     left: 50% !important;
-    margin-left: -128px !important; /* 320*0.8/2 = 128 */
+    margin-left: -160px !important; /* 320/2 = 160 (sem considerar scale) */
   }
 }
 
 @media (max-width: 400px) {
   iframe[src*="hotmart"] {
-    transform: scale(0.7) translateX(-30px) !important;
-    margin-left: -112px !important; /* 320*0.7/2 = 112 */
+    transform: scale(0.7) !important;
+    margin-left: -160px !important; /* Mantém o mesmo centro */
   }
 }
 
 @media (max-width: 350px) {
   iframe[src*="hotmart"] {
-    transform: scale(0.6) translateX(-40px) !important;
-    margin-left: -96px !important; /* 320*0.6/2 = 96 */
+    transform: scale(0.6) !important;
+    margin-left: -160px !important; /* Mantém o mesmo centro */
   }
 }
 </style>
