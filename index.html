@@ -43,11 +43,28 @@ fbq('track', 'PageView');
   .hotmart-button,
   iframe[src*="hotmart"],
   .hotmart-widget {
-    width: 100% !important;
-    max-width: 300px !important;
-    margin: 0 auto !important;
+    width: 90% !important;
+    max-width: 280px !important;
+    height: auto !important;
+    margin: 10px auto !important;
     display: block !important;
+    transform: none !important;
+    position: relative !important;
   }
+  
+  /* Forçar container a conter o iframe */
+  .hotmart-widget-container,
+  div[class*="hotmart"] {
+    overflow: hidden !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Para todas as telas */
+iframe[src*="hotmart"] {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
 }
 </style>
   </head>
