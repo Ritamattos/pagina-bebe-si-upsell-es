@@ -110,7 +110,7 @@ const UpsellPage = () => {
             <Card className="border-green-500 border-2 shadow-lg">
               <CardContent className="p-6 text-center">
                 <img 
-                  src="/lovable-uploads/26d4a9ec-78a8-4d58-bc3b-5bb69401ce60.png" 
+                  src="/lovable-uploads/9444de13-c769-4f42-82f6-1eeb31b321f0.png" 
                   alt="Baraja Física Bebe Si" 
                   className="mx-auto w-48 h-48 object-contain mb-4"
                 />
@@ -130,7 +130,7 @@ const UpsellPage = () => {
             <Card className="border-green-500 border-2 shadow-lg">
               <CardContent className="p-6 text-center">
                 <img 
-                  src="/lovable-uploads/005e6251-5717-4556-86fd-d68bb71221d4.png" 
+                  src="/lovable-uploads/c61f1b8e-4f18-4aac-a6ad-16482a86d8d3.png" 
                   alt="Cartas Personalizables" 
                   className="mx-auto w-48 h-48 object-contain mb-4"
                 />
@@ -207,9 +207,9 @@ const UpsellPage = () => {
           <h3 className="text-2xl font-bold mb-4">
             👇 ASEGURAR MI OFERTA AHORA 👇
           </h3>
-          <div className="bg-white rounded-lg p-4">
+          <div className="bg-white rounded-lg p-4 md:p-6">
             {/* HOTMART - Sales Funnel Widget */}
-            <div id="hotmart-sales-funnel"></div>
+            <div id="hotmart-sales-funnel" className="min-h-[120px] md:min-h-[80px]"></div>
             {/* Widget será cargado vía useEffect */}
           </div>
         </div>
