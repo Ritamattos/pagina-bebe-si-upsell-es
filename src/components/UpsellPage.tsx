@@ -56,7 +56,7 @@ const UpsellPage = () => {
             ¡ESPERA! OFERTA ESPECIAL
           </h1>
           <h2 className="text-2xl md:text-3xl font-bold text-green-600 mb-6">
-            Llévate TODO de Beba Se por solo
+            Llévate TODO de Bebe Si por solo
           </h2>
           <div className="text-6xl font-bold text-green-500 mb-2">$ 9,90</div>
           <div className="text-xl text-gray-600 line-through mb-4">De $ 197,00</div>
@@ -69,11 +69,11 @@ const UpsellPage = () => {
         <div className="text-center mb-12">
           <img 
             src="/lovable-uploads/c39c80b0-54ce-4f3b-9f89-9618c9528c4e.png" 
-            alt="App Beba Se" 
+            alt="App Bebe Si" 
             className="mx-auto w-64 h-64 object-contain rounded-2xl shadow-lg"
           />
           <h3 className="text-2xl font-bold text-green-600 mt-4">
-            App Beba Se - ¡Más de 150 Preguntas!
+            App Bebe Si - ¡Más de 150 Preguntas!
           </h3>
           <p className="text-gray-700 mt-2 max-w-2xl mx-auto">
             ¡El juego más divertido para jugar con tu novia, novio o amigos! 
@@ -111,7 +111,7 @@ const UpsellPage = () => {
               <CardContent className="p-6 text-center">
                 <img 
                   src="/lovable-uploads/26d4a9ec-78a8-4d58-bc3b-5bb69401ce60.png" 
-                  alt="Baraja Física Beba Se" 
+                  alt="Baraja Física Bebe Si" 
                   className="mx-auto w-48 h-48 object-contain mb-4"
                 />
                 <h4 className="text-xl font-bold text-green-600 mb-2">
@@ -179,7 +179,7 @@ const UpsellPage = () => {
           </h3>
           <div className="space-y-3">
             <div className="flex justify-between items-center border-b pb-2">
-              <span className="text-lg">App Beba Se (150+ preguntas)</span>
+              <span className="text-lg">App Bebe Si (150+ preguntas)</span>
               <span className="font-bold text-gray-500 line-through">$ 113,00</span>
             </div>
             <div className="flex justify-between items-center border-b pb-2">
