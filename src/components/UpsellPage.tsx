@@ -11,16 +11,19 @@ const UpsellPage = () => {
     script.src = 'https://checkout.hotmart.com/lib/hotmart-checkout-elements.js';
     script.async = true;
     script.onload = () => {
-      // Inicializar o widget após o script carregar
-      if ((window as any).checkoutElements) {
-        (window as any).checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
-      }
+      // Executar o código de inicialização após o script carregar
+      const initScript = document.createElement('script');
+      initScript.innerHTML = `
+        checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+      `;
+      document.head.appendChild(initScript);
     };
     document.head.appendChild(script);
 
     return () => {
-      // Limpar script quando componente for desmontado
-      document.head.removeChild(script);
+      // Limpar scripts quando componente for desmontado
+      const scripts = document.querySelectorAll('script[src*="hotmart-checkout-elements"]');
+      scripts.forEach(script => script.remove());
     };
   }, []);
 
