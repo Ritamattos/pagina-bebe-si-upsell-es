@@ -54,10 +54,10 @@ const UpsellPage = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-green-600 mb-6">
             Leve TUDO do Beba Se por apenas
           </h2>
-          <div className="text-6xl font-bold text-green-500 mb-2">R$ 59,90</div>
+          <div className="text-6xl font-bold text-green-500 mb-2">R$ 29,90</div>
           <div className="text-xl text-gray-600 line-through mb-4">De R$ 197,00</div>
           <Badge className="bg-red-500 text-white text-lg px-4 py-2">
-            70% OFF - APENAS HOJE!
+            85% OFF - APENAS HOJE!
           </Badge>
         </div>
 
@@ -192,8 +192,8 @@ const UpsellPage = () => {
             </div>
             <div className="text-center bg-green-500 text-white rounded-lg p-4">
               <div className="text-2xl font-bold">VOCÊ PAGA APENAS:</div>
-              <div className="text-4xl font-bold">R$ 59,90</div>
-              <div className="text-lg">Economia de R$ 137,10 (70% OFF)</div>
+              <div className="text-4xl font-bold">R$ 29,90</div>
+              <div className="text-lg">Economia de R$ 167,10 (85% OFF)</div>
             </div>
           </div>
         </div>
